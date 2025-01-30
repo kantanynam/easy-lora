@@ -332,7 +332,8 @@ def simple_train(base_model, input_image_path, lora_name, mode_inputs, character
         "--sdxl",
         "--skip_existing",
         "--console_log_simple",
-        "--lowram"
+        "--lowram", 
+        "--disable_mmap_load_safetensors"
     ]
     try:
         subprocess.run(command, check=True)
@@ -378,7 +379,8 @@ def simple_train(base_model, input_image_path, lora_name, mode_inputs, character
         "--cache_text_encoder_outputs",
         "--cache_text_encoder_outputs_to_disk",
         "--console_log_simple",
-        "--lowram"
+        "--lowram",
+        "--disable_mmap_load_safetensors"
     ]
     try:
         subprocess.run(command, check=True)
