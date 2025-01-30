@@ -475,7 +475,8 @@ def detail_train(base_model, detail_lora_name, detail_base_img_path, detail_base
         "--sdxl",
         "--skip_existing",
         "--console_log_simple",
-        "--lowram"
+        "--lowram", 
+        "--disable_mmap_load_safetensors"
     ]
     try:
         subprocess.run(command, check=True)
@@ -521,7 +522,8 @@ def detail_train(base_model, detail_lora_name, detail_base_img_path, detail_base
         "--cache_text_encoder_outputs",
         "--cache_text_encoder_outputs_to_disk",
         "--console_log_simple",
-        "--lowram"
+        "--lowram",
+        "--disable_mmap_load_safetensors"
     ]
     try:
         subprocess.run(command, check=True)
