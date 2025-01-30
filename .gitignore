@@ -3,7 +3,7 @@
 /output
 /models
 /train_data
-/sd-scripts
+# /sd-scripts
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
